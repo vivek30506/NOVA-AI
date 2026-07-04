@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA AI</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+        <link rel="stylesheet" href="adults.css">
+    <script type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+    <div class="blur1"></div>
+    <div class="blur2"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <i class="fa-solid fa-robot"></i>
+                <span>NOVA AI</span>
+            </div>
+
+            <ul>
+                <li><a href="base.html">Home</a></li>
+                <li><a href="Features.html">Features</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="left">
+             <h1>
+You're Never Alone.
+Nova Is Here
+For You.
+</h1>
+
+<p>
+A caring AI companion that listens, supports,
+and helps you navigate stress, anxiety,
+and everyday emotional challenges.
+</p>
+            <div class="buttons">
+
+                <a href="#" class="btn1">
+                      <i class="fa-solid fa-comments"></i>
+
+                    Chat with Nova
+                </a>
+
+                <a href="game.html" class="btn2">
+                    <i class="fa-solid fa-gamepad"></i>
+                     Play Games
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="robot">
+
+                <model-viewer
+                    src="robot.glb"
+                    camera-controls
+                    auto-rotate
+                    disable-zoom
+                    shadow-intensity="1"
+                    style="width:420px;height:500px;background:transparent;">
+                </model-viewer>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+<section class="features">
+
+    <div class="card">
+        <i class="fa-solid fa-comments"></i>
+        <h3>24/7 AI Companion</h3>
+        <p>Always available whenever you need someone to talk to.</p>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-heart"></i>
+        <h3>Emotional Support</h3>
+        <p>A safe space to express your thoughts and emotions freely.</p>
+    </div>
+
+  
+    <div class="card">
+        <i class="fa-solid fa-leaf"></i>
+        <h3>Stress Relief</h3>
+        <p>Relax with guided breathing and mindfulness exercises.</p>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-moon"></i>
+        <h3>Sleep Support</h3>
+        <p>Gentle relaxation tips and calming conversations before bedtime.</p>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-shield-heart"></i>
+        <h3>Private & Secure</h3>
+        <p>Your conversations stay private, creating a safe environment to open up.</p>
+    </div>
+
+</section>
+    
+    
+</body>
+</html>

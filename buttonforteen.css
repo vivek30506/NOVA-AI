@@ -1,0 +1,305 @@
+/* ==========================
+   NOVA - Choose Page
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:url("buttonteen.jpeg") center center/cover no-repeat;
+    min-height:100vh;
+    color:#fff;
+}
+
+.overlay{
+    width:100%;
+    min-height:100vh;
+    background:rgba(5,10,35,.45);
+    backdrop-filter:blur(8px);
+    padding:40px 7%;
+}
+
+/* ==========================
+   Logo
+========================== */
+
+.logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.logo i{
+    background:linear-gradient(135deg,#00D4FF,#7B61FF,#FF5ACD);
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 0 10px #00D4FF)
+           drop-shadow(0 0 20px #FF5ACD);
+           font-size: 50px;
+}
+.logo h2{
+    font-size:42px;
+    letter-spacing:2px;
+    font-weight:800;
+}
+
+/* ==========================
+   Header
+========================== */
+
+header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+header h1{
+    font-size:60px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+header p{
+    max-width:700px;
+    margin:auto;
+    color:#ddd;
+    line-height:30px;
+    font-size:18px;
+}
+
+/* ==========================
+   Cards
+========================== */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:500px;
+    min-height:320px;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    gap:30px;
+    padding:30px;
+    backdrop-filter:blur(15px);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+/* Blue Card */
+
+.blue{
+    background:rgba(0,140,255,.15);
+    border:2px solid #32d7ff;
+    box-shadow:0 0 30px rgba(50,215,255,.6);
+}
+
+.blue:hover{
+    box-shadow:0 0 60px rgba(50,215,255,1);
+}
+
+/* Pink Card */
+
+.pink{
+    background:rgba(255,0,150,.15);
+    border:2px solid #ff70d2;
+    box-shadow:0 0 30px rgba(255,112,210,.6);
+}
+
+.pink:hover{
+    box-shadow:0 0 60px rgba(255,112,210,1);
+}
+
+/* ==========================
+   Circle
+========================== */
+
+.circle{
+    width:190px;
+    height:190px;
+    border-radius:50%;
+    flex-shrink:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.blue .circle{
+    background:radial-gradient(circle,#56e8ff,#1b7fff,#003da5);
+    box-shadow:0 0 35px #3fdcff;
+}
+
+.pink .circle{
+    background:radial-gradient(circle,#ffc0ea,#ff5fc4,#b1007f);
+    box-shadow:0 0 35px #ff70d2;
+}
+
+/* Sketchfab iframe */
+
+
+.circle iframe{
+    width:100%;
+    height:100%;
+    border:none;
+    border-radius:50%;
+}
+/* ==========================
+   Content
+========================== */
+
+.content{
+    flex:1;
+}
+
+.content h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.line{
+    width:90px;
+    height:5px;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+.blue-line{
+    background:#38d9ff;
+}
+
+.pink-line{
+    background:#ff70d2;
+}
+
+.content p{
+    color:#eee;
+    line-height:28px;
+    margin-bottom:25px;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.blue-btn,
+.pink-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:15px 28px;
+    border-radius:50px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+
+.blue-btn{
+    background:linear-gradient(135deg,#00d4ff,#0066ff);
+    box-shadow:0 0 20px rgba(0,212,255,.7);
+}
+
+.blue-btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 40px rgba(0,212,255,1);
+}
+
+.pink-btn{
+    background:linear-gradient(135deg,#ff4fb8,#ff82cf);
+    box-shadow:0 0 20px rgba(255,79,184,.7);
+}
+
+.pink-btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 40px rgba(255,79,184,1);
+}
+
+/* ==========================
+   OR
+========================== */
+
+.or{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    font-size:22px;
+    background:rgba(255,255,255,.15);
+    border:2px solid rgba(255,255,255,.4);
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 20px rgba(255,255,255,.4);
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    margin-top:70px;
+    text-align:center;
+    color:#ddd;
+    font-size:18px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:1100px){
+
+.cards{
+    flex-direction:column;
+}
+
+.or{
+    margin:20px 0;
+}
+
+}
+
+@media(max-width:768px){
+
+header h1{
+    font-size:38px;
+}
+
+.card{
+    width:100%;
+    flex-direction:column;
+    text-align:center;
+}
+
+.circle{
+    width:170px;
+    height:170px;
+}
+
+.content h2{
+    font-size:32px;
+}
+
+.blue-btn,
+.pink-btn{
+    width:100%;
+    justify-content:center;
+}
+
+}

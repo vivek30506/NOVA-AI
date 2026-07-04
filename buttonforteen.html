@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA | Choose Your Space</title>
+
+    <link rel="stylesheet" href="buttonforteen.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+    <i class="fa-solid fa-robot"></i>
+    <h2>NOVA</h2>
+     </div>
+
+        <h1>Your AI Friend<br>For Every Teen</h1>
+
+        <p>
+            Helping teenagers feel heard, supported and happier with friendly conversations.
+        </p>
+
+    </header>
+
+    <!-- Cards -->
+
+    <section class="cards">
+
+        <!-- Boys Card -->
+
+        <div class="card blue">
+
+            <div class="circle">
+
+         
+                  <model-viewer
+         src="cyber_samurai.glb"
+         camera-controls
+             auto-rotate
+               disable-zoom
+          shadow-intensity="1"
+             style="width:420px; height:500px; background:transparent;">
+
+            </div>
+
+            <div class="content">
+
+                <h2>Boys Teen</h2>
+
+                <div class="line blue-line"></div>
+
+                <p>
+                    A safe and supportive place where boys can chat, learn and grow with Nova.
+                </p>
+
+                <a href="Teen.html" class="blue-btn">
+                    <i class="fa-solid fa-person"></i>
+                    Enter Boys
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- OR -->
+
+        <div class="or">
+            OR
+        </div>
+
+        <!-- Girls Card -->
+
+        <div class="card pink">
+
+            <div class="circle">
+                <model-viewer
+                 src="cute_appa.glb"
+                  camera-controls
+                   auto-rotate
+                   disable-zoom
+                   shadow-intensity="1"
+                style="width:420px; height:500px; background:transparent;">
+
+                 </model-viewer>
+
+                
+
+            </div>
+
+            <div class="content">
+
+                <h2>Girls Teen</h2>
+
+                <div class="line pink-line"></div>
+
+                <p>
+                    A friendly and caring space where girls can share, express and shine with Nova.
+                </p>
+
+                <a href="Gteen.html" class="pink-btn">
+                    <i class="fa-solid fa-person-dress"></i>
+                    Enter Girls
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>✨ You're not alone. NOVA is always with you.</p>
+
+    </footer>
+
+</div>
+
+</body>
+</html>
